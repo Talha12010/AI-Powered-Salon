@@ -1,0 +1,393 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111827;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+/* ============================================================
+   BLACK & WHITE THEME OVERRIDES
+   All accent / brand colors → black, dark-gray, or mid-gray
+   ============================================================ */
+
+/* Hero / page-level gradients */
+.hero-section,
+.signin-page,
+.signup-page,
+.signin-brand,
+.signup-brand,
+.cta-section,
+.final-cta-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #3d3d3d 100%) !important;
+}
+
+/* Gradient text → plain white (on dark bg) */
+.gradient-text {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+  color: #ffffff !important;
+}
+
+/* Logo highlight */
+.logo-highlight {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  background-clip: unset !important;
+  color: #111827 !important;
+}
+
+/* Navbar logo gradient circle */
+.logo-icon circle,
+.logo-icon linearGradient stop {
+  stop-color: #222222 !important;
+}
+
+/* Primary gradient buttons → solid black */
+.btn-signup,
+.btn-signup-mobile,
+.submit-btn,
+.btn-analyze,
+.btn-try-this,
+.btn-start-free,
+.btn-send-another,
+.btn-directions,
+.btn-reset,
+.filter-tab.active,
+.popular-badge,
+.btn-select-plan.popular-btn {
+  background: #111827 !important;
+  color: #ffffff !important;
+  border-color: #111827 !important;
+  box-shadow: none !important;
+}
+
+.btn-signup:hover,
+.btn-signup-mobile:hover,
+.submit-btn:hover,
+.btn-analyze:hover:not(:disabled),
+.btn-try-this:hover,
+.btn-start-free:hover,
+.btn-send-another:hover,
+.btn-directions:hover,
+.btn-reset:hover,
+.btn-select-plan.popular-btn:hover {
+  background: #374151 !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25) !important;
+}
+
+/* Step number circles */
+.step-number {
+  background: linear-gradient(135deg, #111827, #374151) !important;
+}
+
+/* Avatar initials */
+.avatar-initials {
+  background: linear-gradient(135deg, #111827, #374151) !important;
+}
+
+/* User avatars in cards */
+.user-avatar {
+  background: linear-gradient(135deg, #111827, #374151) !important;
+}
+
+/* Active nav links */
+.nav-link.active {
+  color: #111827 !important;
+  background: #f3f4f6 !important;
+}
+
+/* Hover states that show accent color */
+.filter-tab:hover,
+.btn-load-more:hover,
+.btn-view-all:hover,
+.style-link:hover,
+.contact-card-action:hover,
+.sort-select:focus,
+.avatar-btn:hover,
+.social-btn:hover,
+.password-toggle:hover,
+.forgot-password:hover,
+.form-footer a:hover,
+.quick-link:hover,
+.dropdown-item:hover {
+  color: #111827 !important;
+  border-color: #111827 !important;
+  background-color: #f3f4f6 !important;
+}
+
+/* Colored accent text / links */
+.style-link,
+.contact-card-action,
+.forgot-password,
+.form-footer a,
+.terms-text a,
+.quick-link,
+.btn-cta-primary,
+.btn-primary {
+  color: #111827 !important;
+}
+
+.btn-primary {
+  background: #ffffff !important;
+  color: #111827 !important;
+}
+
+.btn-view-all {
+  color: #111827 !important;
+  border-color: #111827 !important;
+}
+
+.btn-view-all:hover {
+  background: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Contact card icon background */
+.contact-card-icon {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb) !important;
+  color: #111827 !important;
+}
+
+/* Pricing card popular border / popular card */
+.pricing-card.popular,
+.pricing-card.selected {
+  border-color: #111827 !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important;
+}
+
+/* Comparison table highlighted column */
+.comparison-table .highlighted-col {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+.comparison-table tr:hover .highlighted-col {
+  background: #e5e7eb !important;
+}
+
+/* Save badge (green → dark) */
+.save-badge {
+  background: #111827 !important;
+}
+
+/* Annual savings text */
+.annual-savings {
+  color: #374151 !important;
+}
+
+/* Feature check icons (green → black) */
+.feature-item:not(.disabled) svg {
+  color: #111827 !important;
+}
+
+/* Badge dot (green → dark) */
+.badge-dot {
+  background: #374151 !important;
+}
+
+/* Upload area accent */
+.upload-area:hover,
+.upload-area.dragging {
+  border-color: #111827 !important;
+  background: #f9fafb !important;
+}
+
+.upload-icon {
+  color: #374151 !important;
+}
+
+/* Result badge / style category badge */
+.result-badge,
+.style-category,
+.after-label,
+.transformation-arrow {
+  background: rgba(17, 24, 39, 0.85) !important;
+}
+
+/* Confidence circle accent stroke */
+.result-confidence path[stroke="#6366f1"],
+path[stroke="#6366f1"] {
+  stroke: #111827 !important;
+}
+
+.confidence-text {
+  color: #111827 !important;
+}
+
+/* Input focus */
+.input-wrapper input:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus,
+.search-box:focus-within {
+  border-color: #374151 !important;
+  box-shadow: 0 0 0 3px rgba(55, 65, 81, 0.12) !important;
+  color: #111827 !important;
+}
+
+/* Checkboxes */
+.remember-me input:checked + .checkmark,
+.checkbox-label input:checked + .checkmark {
+  background: #111827 !important;
+  border-color: #111827 !important;
+}
+
+/* Submit btn loading state */
+.submit-btn.loading {
+  background: #374151 !important;
+}
+
+/* Dropdown logout red → gray */
+.dropdown-item.logout {
+  color: #374151 !important;
+}
+.dropdown-item.logout:hover {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* Success / error message alerts → neutral */
+.message-alert.success {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+  border-color: #d1d5db !important;
+}
+.message-alert.error {
+  background: #f9fafb !important;
+  color: #374151 !important;
+  border-color: #d1d5db !important;
+}
+
+/* Contact success icon stroke */
+.success-icon svg {
+  stroke: #111827 !important;
+}
+
+/* Testimonial nav dots */
+.nav-dot {
+  border-color: #374151 !important;
+}
+.nav-dot.active {
+  background: #111827 !important;
+}
+
+/* Map section pin icon */
+.map-content svg {
+  stroke: #374151 !important;
+}
+
+/* Card type badges → neutral */
+.card-type-badge.trending {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+}
+.card-type-badge.classic {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+}
+.card-type-badge.modern {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+}
+
+/* Step connector arrow (purple → dark) */
+.step-connector svg {
+  stroke: #374151 !important;
+}
+
+/* Pricing page hero comparison arrows */
+svg[stroke="#6366f1"] {
+  stroke: #374151 !important;
+}
+svg[stroke="#10b981"] {
+  stroke: #374151 !important;
+}
+svg[stroke="#ef4444"] {
+  stroke: #888888 !important;
+}
+
+/* Password strength color override (JS inline style – no override possible but defaulting neutral) */
+.strength-bar-mini {
+  background: #111827 !important;
+}
+.password-mismatch {
+  color: #374151 !important;
+}
+
+/* Filter tab border on hover */
+.filter-tab:hover {
+  border-color: #374151 !important;
+  color: #111827 !important;
+  background: #f9fafb !important;
+}
+
+/* Sort/search focus */
+.sort-select:focus,
+.search-box:focus-within {
+  border-color: #374151 !important;
+  color: #111827 !important;
+}
+
+/* btn-select-plan default hover */
+.btn-select-plan:hover {
+  border-color: #111827 !important;
+  color: #111827 !important;
+}
+
+/* Author avatars in testimonial/transformations */
+.author-avatar {
+  background: linear-gradient(135deg, #111827, #374151) !important;
+  color: #ffffff !important;
+}
+
+/* Btn try look */
+.btn-try-look {
+  color: #111827 !important;
+}
+.btn-try-look:hover {
+  color: #374151 !important;
+}
+
+/* CTA secondary btn on dark bg */
+.btn-cta-secondary,
+.btn-secondary,
+.btn-contact-sales {
+  background: rgba(255,255,255,0.15) !important;
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,0.3) !important;
+}
+
