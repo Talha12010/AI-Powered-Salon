@@ -1,0 +1,185 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "questions": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Good morning",
+        "Is anyone available to help?"
+      ],
+      "answer": "Hello! Welcome to our support chat. How can I help you today?"
+    },
+    {
+      "intent": "goodbye",
+      "questions": [
+        "Bye",
+        "Thanks, that's all",
+        "See you later",
+        "Thank you, goodbye"
+      ],
+      "answer": "Thank you for reaching out. Have a great day! Feel free to message us anytime."
+    },
+    {
+      "intent": "order_status",
+      "questions": [
+        "Where is my order?",
+        "Can you track my order?",
+        "What's the status of my order #12345?",
+        "I want to check my order tracking",
+        "My order hasn't arrived yet"
+      ],
+      "answer": "I can help with that. Could you please share your order number so I can check its current status?"
+    },
+    {
+      "intent": "cancel_order",
+      "questions": [
+        "I want to cancel my order",
+        "How do I cancel my purchase?",
+        "Can I cancel order #12345?",
+        "Please cancel my recent order"
+      ],
+      "answer": "I can help you cancel your order. Please provide your order number, and I'll process the cancellation if it's still eligible."
+    },
+    {
+      "intent": "refund_request",
+      "questions": [
+        "I want a refund",
+        "How do I get my money back?",
+        "Can I return this item for a refund?",
+        "My refund hasn't shown up yet"
+      ],
+      "answer": "I'm sorry for the inconvenience. Please share your order number and reason for the refund, and I'll guide you through the process."
+    },
+    {
+      "intent": "shipping_info",
+      "questions": [
+        "How long does shipping take?",
+        "Do you ship internationally?",
+        "What are your delivery options?",
+        "How much does shipping cost?"
+      ],
+      "answer": "Standard shipping usually takes 3-5 business days. We also offer express options. Would you like details for your specific location?"
+    },
+    {
+      "intent": "product_availability",
+      "questions": [
+        "Is this product in stock?",
+        "When will item X be available again?",
+        "Do you have this in a different size/color?",
+        "Is this still available?"
+      ],
+      "answer": "Let me check that for you. Could you share the product name or SKU number?"
+    },
+    {
+      "intent": "pricing_inquiry",
+      "questions": [
+        "How much does this cost?",
+        "Are there any discounts available?",
+        "Do you have a coupon code?",
+        "What's the price for the premium plan?"
+      ],
+      "answer": "I'd be happy to share pricing details. Could you tell me which product or plan you're interested in?"
+    },
+    {
+      "intent": "account_login_issue",
+      "questions": [
+        "I can't log into my account",
+        "My password isn't working",
+        "I'm locked out of my account",
+        "Login keeps failing"
+      ],
+      "answer": "Sorry for the trouble. Let's get this fixed. Have you tried resetting your password using the 'Forgot Password' link?"
+    },
+    {
+      "intent": "password_reset",
+      "questions": [
+        "How do I reset my password?",
+        "I forgot my password",
+        "Send me a password reset link",
+        "Can you reset my account password?"
+      ],
+      "answer": "No problem! Please go to the login page and click 'Forgot Password' to receive a reset link via email."
+    },
+    {
+      "intent": "complaint",
+      "questions": [
+        "I'm very unhappy with my purchase",
+        "This product is defective",
+        "I want to file a complaint",
+        "The service was terrible"
+      ],
+      "answer": "I'm sorry to hear about your experience. I'd like to make this right — could you share more details about what happened?"
+    },
+    {
+      "intent": "talk_to_human",
+      "questions": [
+        "I want to talk to a real person",
+        "Connect me with an agent",
+        "Can a human help me instead?",
+        "This bot isn't helping, transfer me"
+      ],
+      "answer": "Of course, I'll connect you with one of our support agents right away. Please hold on for a moment."
+    },
+    {
+      "intent": "business_hours",
+      "questions": [
+        "What are your business hours?",
+        "Are you open right now?",
+        "When can I call customer service?",
+        "What time do you close?"
+      ],
+      "answer": "Our support team is available Monday to Friday, 9 AM - 6 PM. This chat is available 24/7 for quick assistance."
+    },
+    {
+      "intent": "warranty_inquiry",
+      "questions": [
+        "Does this product have a warranty?",
+        "How do I claim warranty service?",
+        "What does the warranty cover?",
+        "Is my item still under warranty?"
+      ],
+      "answer": "Most of our products come with a 1-year warranty. Could you share your order number so I can confirm your coverage?"
+    },
+    {
+      "intent": "feedback",
+      "questions": [
+        "I want to leave feedback",
+        "How was my support experience? I want to comment",
+        "Can I rate this service?",
+        "I have a suggestion for improvement"
+      ],
+      "answer": "We'd love to hear your feedback! Please go ahead and share your thoughts — it helps us improve."
+    },
+    {
+      "intent": "payment_issue",
+      "questions": [
+        "My payment didn't go through",
+        "I was charged twice",
+        "Payment failed but money was deducted",
+        "I need help with billing"
+      ],
+      "answer": "I'm sorry about that. Could you share the transaction ID or order number so I can investigate the payment issue?"
+    },
+    {
+      "intent": "thanks",
+      "questions": [
+        "Thank you",
+        "Thanks for the help",
+        "That was helpful, thanks",
+        "Appreciate it"
+      ],
+      "answer": "You're very welcome! Is there anything else I can help you with?"
+    },
+    {
+      "intent": "unknown",
+      "questions": [
+        "asdkjasd",
+        "blah blah",
+        "I don't know what I want"
+      ],
+      "answer": "I'm sorry, I didn't quite understand that. Could you rephrase your question, or would you like to speak with a human agent?"
+    }
+  ]
+}
